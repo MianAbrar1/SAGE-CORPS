@@ -1,34 +1,178 @@
-/* public/css/styles.css */
-
-/* Make the navbar black */
-.navbar {
+#navbar{
     background-color: black;
-    
-  }
-  nav{
+    min-height: 120px;
+    align-items: center;
+    align-items: inherit;
     font-family: Poppins,Sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.3em;
-  }
-  
-  /* Apply red underline on hover for dropdown options */
-  .custom-dropdown .nav-item.dropdown:hover .nav-link,
+font-size: 16px;
+font-weight: 500;
+line-height: 1.3em;
+}
+.nav-link{
+    color: white!important
+}
+.nav-item:hover{
+    text-decoration-line: underline;
+    text-decoration-color: hsl(0, 100%, 50%);
+    text-decoration-style: solid;
+    transform: translateY(-3px);
+    -moz-text-decoration-color: hsl(0, 100%, 50%);
+
+}
+.nav-item::after{
+    background: red;
+}
+.nav-item{
+    color: white;
+    padding: 7px;
+    padding-top: 10px;
+display: flex;
+color: white;
+align-items: center;
+}
+.navbar-nav{
+    padding-left: 263px;
+}
+.btn-sm{
+    padding-top: 10px;
+    padding: 5px 23px;
+    margin: 1px;
+    text-decoration-line:none!important;
+    font-size: 18px;
+    background: #56b1bf;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+    -ms-border-radius: 100px 100px 100px 100px;
+    -o-border-radius: 100px 100px 100px 100px;
+}
+.nt1{
+    color: white;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+.nt1:hover{
+    color: red;
+}
+.btn-sm:hover{
+     background: none;
+     text-decoration-line:none!important;
+     color: red;
+     border: 2px solid red;
+     -moz-text-decoration-line:none!important;
+}
+
+.select2-results {
+    max-height: 200px;
+    padding: 0 0 0 4px;
+    margin: 4px 4px 4px 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+}
+.custom-dropdown .nav-item.dropdown:hover .nav-link,
   .custom-dropdown .nav-item.dropdown:hover .dropdown-menu a.dropdown-item {
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #56b1bf;
+    -moz-text-decoration-color: #56b1bf;
   }
-  
+
   /* Remove default Bootstrap styles for the dropdown items */
   .custom-dropdown .dropdown-menu a.dropdown-item {
-    color: white; /* Set the default color for the dropdown items */
+    padding: 20px;
+    color: black; /* Set the default color for the dropdown items */
   }
-  .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255 255 255)! important;
-}
-  
-  /* Apply red color to the dropdown items on hover */
+    /* Apply red color to the dropdown items on hover */
   .custom-dropdown .dropdown-menu a.dropdown-item:hover {
-    color: red;
+    color: #56b1bf;
   }
-  
+  .dropdown-menu{
+    padding: 5px;
+  }
+  .container-fluid{
+    margin-top: 101px;
+    color:#000 !important;
+}
+.social{
+    font-size: 21px !important;
+}
+
+
+.color-text{
+    color:#757575 !important;
+}
+footer{
+    color:#caced1 !important;
+ }
+ .Careers{
+    cursor: pointer;
+    color: #1E88E5;
+}
+
+.row-1{
+    background-color:#000000 !important;
+}
+
+.row-2{
+
+    background-color: #000000 !important;
+}
+.p-t-c{
+    color: white;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.p-t-c:hover{
+    text-decoration-line: none;
+    text-decoration-color: #56b1bf;
+    -moz-text-decoration-color: #56b1bf;
+}
+.fth{
+    color: #56b1bf;
+    font-size: 18px;
+    padding: 20px;
+}
+.ftl{
+padding: 5px;
+}
+.ftl1{
+    color: white;
+    text-decoration-line: none;
+    padding: 16px;
+    line-height: 33px;
+}
+.ftl1:hover{
+    text-decoration-line: none;
+    color: #56b1bf;
+}
+.ftlt{
+    margin: 5px;
+}
+.ftlt:hover{
+    text-decoration-line: none;
+    color: #56b1bf;
+}
+.crt{
+    border-top: 1px solid #545559;
+    height: 95px;
+}
+.ftmm{
+    height: 365px;
+}
+.ftl2{
+    padding: 16px;
+    color: white;
+}
+.ftl3{
+    padding: 16px;
+    color: white;
+}
+.ftl4{
+    padding: 10px;
+}
