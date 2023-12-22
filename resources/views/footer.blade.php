@@ -3,11 +3,11 @@
        <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3 ftmm">
            <div class="col-12">
                 <div class="row row-2">
-                    <div class="col-sm-3 text-md-center"><a href="#"><img style="margin: 40px" width="185" height="56.55"
+                    <div class="col-sm-3 text-md-center"><a href="#"><img style="margin: 40px; margin-top: 30px; margin-right: 63px;" width="160" height="48.66"
                         src="https://i5de0c.p3cdn1.secureserver.net/wp-content/uploads/2022/05/Sagecorps-logo-e1701131094171.webp?time=1701681697"
                         alt="" width="160"></a></div>
                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled">
-                        <li class="mt-0 fth"><strong> Company </strong></li>
+                        <li class="mt-0 fth"> Company </li>
                         <div class="ftl">
                         <li><a href="https://sagecorps.com/about/" class="ftl1"> About</a></li>
                         <li><a href="https://sagecorps.com/parent-info/" class="ftl1">Parents</a></li>
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled">
-                        <li class="mt-0 fth"><strong> Follow us</strong></li>
+                        <li class="mt-0 fth">Follow us</li>
                         <div class="ftl">
                         <li><a href="https://www.linkedin.com/company/sage-corps/" class="ftl1"><svg xmlns="http://www.w3.org/2000/svg" class="ftlt" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
                             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M40.227,12c10.918,0 11.773,0.854 11.773,11.773v16.453c0,10.919 -0.855,11.774 -11.773,11.774h-16.454c-10.918,0 -11.773,-0.855 -11.773,-11.773v-16.454c0,-10.919 0.855,-11.773 11.773,-11.773zM25.029,43v-16.272h-5.057v16.272zM22.501,24.401c1.625,0 2.947,-1.322 2.947,-2.949c0,-1.625 -1.322,-2.947 -2.947,-2.947c-1.629,0 -2.949,1.32 -2.949,2.947c0,1.627 1.318,2.949 2.949,2.949zM44,43v-8.925c0,-4.382 -0.946,-7.752 -6.067,-7.752c-2.46,0 -4.109,1.349 -4.785,2.628h-0.068v-2.223h-4.851v16.272h5.054v-8.05c0,-2.122 0.405,-4.178 3.036,-4.178c2.594,0 2.628,2.427 2.628,4.315v7.913z"></path></g></g>
@@ -32,7 +32,7 @@
                     </ul>
                 </div>
                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled">
-                        <li class="mt-0 fth"><strong>Connect</strong></li>
+                        <li class="mt-0 fth">Connect</li>
                         <div class="ftl">
                         <li class="ftl2">222 Merchandies Mart West,<br> Suite 1212, Chicago, Illinois, 60654,<br> United States</li>
                         <li class="ftl3">info@sagecorps.com</li>

@@ -31,7 +31,7 @@
                             aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                             Program Overview +
                         </a>
-                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown">
                             <a class="dropdown-item" href="https://sagecorps.com/how-it-works/program-overview/academic-credit/">Academic Credit</a>
                             <a class="dropdown-item" href="https://sagecorps.com/how-it-works/program-overview/skills-academy/">Sage Corps Skills Academy</a>
                             <a class="dropdown-item" href="https://sagecorps.com/how-it-works/program-overview/internship-example-roles/">Internship Example Roles</a>
@@ -44,7 +44,7 @@
                             aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                            Funding your Program +
                         </a>
-                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown">
                             <a class="dropdown-item" href="https://sagecorps.com/how-it-works/finances/sage-corps-scholarships/diversity-scholarship/">Sage Corps Scholarships +</a>
                             <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
                                 <a class="dropdown-item" href="https://sagecorps.com/how-it-works/finances/sage-corps-scholarships/diversity-scholarship/">Diversity Scholarship</a>
@@ -68,7 +68,7 @@
                             aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                             Summer Internship Abroad +
                         </a>
-                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown">
                             <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-amsterdam/">Amsterdam</a>
                             <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-barcelona/">Barcelona</a>
                             <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-berlin/">Berlin</a>
@@ -86,7 +86,7 @@
                         aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                         Study and Intern Abroad Semester +
                     </a>
-                    <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                    <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown">
                         <a class="dropdown-item" href="https://sagecorps.com/programs/study-and-intern-abroad-semester/dublin-semester/">Dublin Semester</a>
                         <a class="dropdown-item" href="https://sagecorps.com/programs/study-and-intern-abroad-semester/sydney-semester/">Sydeny Semester</a>
                     </div>
@@ -109,7 +109,7 @@
                             aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                             Host Startups +
                         </a>
-                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" >
                             <a class="dropdown-item" href="https://sagecorps.com/partners/host-startups/startup-registration/">Startup Registration</a>
                             <a class="dropdown-item" href="https://sagecorps.com/partners/host-startups/returning-startups/">Returning Startups</a>
                         </div>
@@ -130,7 +130,7 @@
                             aria-haspopup="true" aria-expanded="false" aria-hidden="true" id="subProgram1Dropdown">
                            Our Alumni +
                         </a>
-                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown" style="margin-left:100%;">
+                        <div class="dropdown-menu sub" aria-labelledby="subProgram1Dropdown">
                             <a class="dropdown-item" href="https://sagecorps.com/alumni/contact-an-alum/">Contact an Alum</a>
                         </div>
                     </div>

@@ -8,6 +8,25 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.3em;
 }
+#navbarNav{
+    font-family: Poppins,Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+.dropdown-menu{
+    border-style: none;
+}
+
+.sub{
+    margin-left: 100%;
+    margin-top: -31%;
+    border-style: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
 .nav-link{
     color: white!important
 }
@@ -108,6 +127,9 @@ align-items: center;
     color:#757575 !important;
 }
 footer{
+    align-items: center;
+    align-items: inherit;
+    font-family: Poppins,Sans-serif;
     color:#caced1 !important;
  }
  .Careers{
@@ -125,6 +147,8 @@ footer{
 }
 .p-t-c{
     color: white;
+    padding-left: 10px;
+    font-size: 12px;
     text-decoration-line: none;
     -moz-text-decoration-line: none;
 }
@@ -138,6 +162,11 @@ footer{
     font-size: 18px;
     padding: 20px;
 }
+.row-2{
+    padding-top: 28px!important;
+    padding-left: 139px!important;
+    padding-right: 87px!important;
+}
 .ftl{
 padding: 5px;
 }
@@ -145,8 +174,10 @@ padding: 5px;
     color: white;
     text-decoration-line: none;
     padding: 16px;
-    line-height: 33px;
+    line-height: 45px;
+    font-size: 14px;
 }
+
 .ftl1:hover{
     text-decoration-line: none;
     color: #56b1bf;
@@ -168,6 +199,7 @@ padding: 5px;
 .ftl2{
     padding: 16px;
     color: white;
+    font-size: 16px;
 }
 .ftl3{
     padding: 16px;
