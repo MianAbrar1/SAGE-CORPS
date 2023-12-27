@@ -15,9 +15,9 @@ $(':submit').on('click', function() {
             async: false,
             success: function(data) {
                 console.log(data);
-                // if(response.Errors.length > 0){ 
-                //     toastr.error('errors messages'); 
-                // } else { 
+                // if(response.Errors.length > 0){
+                //     toastr.error('errors messages');
+                // } else {
                 toastr.success('application submitted successfully');
                 setTimeout(function() {
                     window.location.reload();
@@ -47,7 +47,7 @@ $(document).ready(function() {
         $(this).find('.dropdown-menu').first().css('top', '0');
     });
 
-   
+
         $('.custom-dropdown').hover(
           function() {
             $(this).addClass('show');
@@ -58,12 +58,12 @@ $(document).ready(function() {
             $(this).find('.main').removeClass('show');
           }
         );
-        
+
         $('.custom-dropdown .nav-link').click(function () {
           window.location.href = $(this).attr('href');
         });
 
-        
+
         $('.sub-main').hover(
             function() {
               $(this).addClass('show');
@@ -75,6 +75,16 @@ $(document).ready(function() {
             }
           );
 
+        $('.sub').hover(
+            function() {
+              $(this).addClass('show');
+              $(this).find('.subdm').addClass('show');
+            },
+            function() {
+              $(this).removeClass('show');
+              $(this).find('.subdm').removeClass('show');
+            }
+          );
 
     $('#cv').hide();
     document.getElementById('my-button').onclick = function() {
@@ -93,7 +103,7 @@ $(document).ready(function() {
         }
     });
     $('.gpa').change(function () {
-        
+
        var select_value = $(this).text();
         if (select_value == '<2.75' || select_value == '2.75-3.0') {
             $('.reason ').removeAttr('disabled');

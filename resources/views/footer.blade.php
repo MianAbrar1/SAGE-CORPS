@@ -3,7 +3,7 @@
        <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3 ftmm">
            <div class="col-12">
                 <div class="row row-2">
-                    <div class="col-sm-3 text-md-center"><a href="#"><img style="margin: 40px; margin-top: 30px; margin-right: 63px;" width="160" height="48.66"
+                    <div class="col-sm-3 text-md-center"><a href="https://sagecorps.com/"><img style="margin: 40px; margin-top: 30px; margin-right: 63px;" width="160" height="48.66"
                         src="https://i5de0c.p3cdn1.secureserver.net/wp-content/uploads/2022/05/Sagecorps-logo-e1701131094171.webp?time=1701681697"
                         alt="" width="160"></a></div>
                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled">
