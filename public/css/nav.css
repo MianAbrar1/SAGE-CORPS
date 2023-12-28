@@ -209,7 +209,7 @@ transition: color 0.4s ease-in-out ;
 .color-text{
     color:#757575 !important;
 }
-footer{
+/* footer{
     align-items: center;
     align-items: inherit;
     font-family: Poppins,Sans-serif;
@@ -290,7 +290,7 @@ padding: 5px;
 }
 .ftl4{
     padding: 10px;
-}
+} */
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -314,3 +314,80 @@ padding: 5px;
   #myBtn:hover {
     color: #3f7f89; /* Add a dark-grey background on hover */
   }
+
+  /*====================
+  Footer
+====================== */
+footer{
+height: auto;
+padding: 60px 30px 60px 30px;
+    background: #000000;
+  }
+  footer-top {
+    background: #000000;
+    padding-bottom: 30px;
+    font-family: Poppins,Sans-serif;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #000000;
+  }
+.main-footer{
+    padding: auto;
+}
+footer ul{
+    list-style-type: none;
+}
+.ftl1{
+    color: white;
+    text-decoration-line: none;
+    line-height: 37px;
+    font-size: 14px;
+    margin-left: -29px;
+}
+
+.ftl1:hover{
+    text-decoration-line: none;
+    color: #56b1bf;
+}
+.widget-title{
+    color: #56b1bf;
+    font-size: 18px;
+    padding: 16px -1px;
+}
+.ftlt{
+    margin: 5px;
+    margin-left: -8px;
+}
+.ftl3{
+    padding: 16px;
+    color: white;
+    margin-left: -13px;
+}
+.brandf {
+    margin-top: -22px;
+    margin-left: -47px;
+}
+.footer-copyright {
+    background: #000000;
+    padding: 30px 10px 30px 10px;
+    color: white;
+    border-top: 1px solid #545559;
+  }
+  .col-sm-3 {
+    width: 27%;
+  }
+.p-t-c{
+    color: white;
+    padding-left: 10px;
+    font-size: 12px;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+.p-t-c:hover{
+    text-decoration-line: none;
+    text-decoration-color: #56b1bf;
+    -moz-text-decoration-color: #56b1bf;
+}
+.abc{
+    margin-left: -20px;
+    display: flex;
+}
