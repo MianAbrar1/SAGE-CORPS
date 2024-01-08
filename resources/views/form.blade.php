@@ -380,8 +380,8 @@
                 peer below by listing their first name, last name, email address, and graduation year.</label>
             <textarea class="form-control" name="question_9828577004" id="nominate" rows="5" style="width: 100%"></textarea>
         </div>
-        <button type="submit" class="btn"
-            style="background-color: #0b188d;color: white;margin-left: 40%; ">Submit Application</button>
+        <button type="submit" class=" btn btn-sm"
+            style="margin-left: 40%; margin-bottom:1%;">Submit Application</button>
     </form>
     @include('footer')
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size:30px' class='fas fa-arrow-up'></i></button>

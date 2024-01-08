@@ -1,8 +1,15 @@
 <a class="logo" href="https://sagecorps.com/"><img width="185" height="56.55"
     src="https://i5de0c.p3cdn1.secureserver.net/wp-content/uploads/2022/05/Sagecorps-logo-e1701131094171.webp?time=1701681697"
     alt="" width="160"></a>
+
+
 <nav class="navbar navbar-expand-lg " id="navbar">
 <ul class="navbar-list">
+    <li class="nav-item dropdown custom-dropdown">
+        <a class="mobile-logo" href="https://sagecorps.com/"><img width="185" height="56.55"
+            src="https://i5de0c.p3cdn1.secureserver.net/wp-content/uploads/2022/05/Sagecorps-logo-e1701131094171.webp?time=1701681697"
+            alt="" width="160"></a>
+    </li>
     <li class="nav-item dropdown custom-dropdown">
         <a class="navbar-link" href="https://sagecorps.com/how-it-works/program-overview/" id="programsDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
