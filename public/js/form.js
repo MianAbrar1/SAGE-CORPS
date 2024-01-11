@@ -377,3 +377,23 @@ document.addEventListener('scroll', () =>{
             header.classList.remove('scrolled');
     }
 })
+navbar.querySelectorAll(".dropdown-menu > i").forEach((fa) => {
+    fa.addEventListener("click", function(){
+        this.closest(".dropdown-menu").classList.toggle("active");
+    })
+})
+navbar.querySelectorAll(".sub > i").forEach((fa) => {
+    fa.addEventListener("click", function(){
+        this.closest(".sub").classList.toggle("active");
+    })
+})
+navbar.querySelectorAll(".subdm > i").forEach((fa) => {
+    fa.addEventListener("click", function(){
+        this.closest(".subdm").classList.toggle("active");
+    })
+})
+navbar.querySelectorAll(".dropdown > i").forEach((fa) => {
+    fa.addEventListener("click", function(){
+        this.closest(".dropdown").classList.toggle("active");
+    })
+})
