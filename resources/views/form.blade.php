@@ -39,11 +39,16 @@
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 </head>
 
+<header class="header">
+    @include('navbar')
+</header>
 <body>
-    <header class="header">
-        @include('navbar')
-    </header>
-
+    {{-- <div class="parent">
+        {{-- <div class="image1"></div>
+        <div class="image2"></div>
+        <img class="image1" src="https://sagecorps.com/wp-content/uploads/2023/11/damian-zaleski-RYyr-k3Ysqg-unsplash-scaled.jpg" alt="">
+        <img class="image2" src="https://sagecorps.com/wp-content/uploads/2022/07/wave-art-bg-black-top.svg" alt="">
+    </div> --}}
 
     <h1 class="text-center"
         style="padding: 20px; font-weight: 500;color: #4a4a4a;font-family: 'proxima-nova','Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 32px;">
@@ -383,6 +388,15 @@
         <button type="submit" class=" btn btn-sm"
             style="margin-left: 40%; margin-bottom:1%;">Submit Application</button>
     </form>
+    <section class="fotbag">
+        <div class="overlaps"></div>
+        <div class="content">
+            <div class="txt">
+                <h1><strong>GAIN THE GLOBAL EXPERIENCE TO STAND OUT</strong></h1>
+            </div>
+            <!-- You can add more content here, like additional text or other elements -->
+        </div>
+    </section>
     @include('footer')
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size:30px' class='fas fa-arrow-up'></i></button>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

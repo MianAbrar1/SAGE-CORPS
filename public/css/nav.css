@@ -4,9 +4,11 @@
     margin: 0;
     vertical-align: middle;
     position: inherit;
+    display: none;
   }
 .nt3{
     font-size: 10px;
+    margin-left: 10px;
 }
   .header {
     padding: 0 4.8rem;
@@ -16,8 +18,8 @@
     align-items: center;
     background-color: #e7f5ff;
     font-family: Poppins, Sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 550;
     top: 0;
     position: sticky;
     transition: background-color 0.4s ease-in-out;
@@ -54,8 +56,8 @@
   .navbar-link:visited {
     display: inline;
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 550;
     color: #212529;
     transition: all 0.3s;
   }
@@ -69,6 +71,9 @@
     display: none;
     background: transparent;
     cursor: pointer;
+  }
+  .dropdown-menu{
+    min-width: 17rem;
   }
 
   .mobile-nav-icon {
@@ -88,15 +93,85 @@
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: max-height 1s ease;
-    -webkit-transition: max-height 1s ease;
-    -moz-transition: max-height 1s ease;
-    -ms-transition: max-height 1s ease;
-    -o-transition: max-height 1s ease;
-  }
+    transition: max-height 3s ease;
+    -webkit-transition: max-height 3s ease;
+    -moz-transition: max-height 3s ease;
+    -ms-transition: max-height 3s ease;
+    -o-transition: max-height 3s ease;
+}
   .nlt::after{
     background-color: rgba(0, 0, 0, 0) !important;
   }
+  .fotbag {
+    position: relative;
+    background-color: #56b1bf;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 9% 20%;
+}
+
+.overlaps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://sagecorps.com/wp-content/uploads/2022/07/wave-art-bg-black-top.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.txt {
+    color: #ffffff !important;
+    font-size: 46px;
+    font-family: Poppins, Sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.image2 {
+    /* background-image: url(https://sagecorps.com/wp-content/uploads/2022/07/wave-art-bg-white-down.svg); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 299px;
+    opacity: 0.25;
+    object-fit: cover;
+    transform: scaleY(-1);
+    mix-blend-mode: normal;
+    filter: invert(100%);
+  }
+  .parent {
+      position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.image1 {
+    /* background-image: url(https://sagecorps.com/wp-content/uploads/2023/11/damian-zaleski-RYyr-k3Ysqg-unsplash-scaled.jpg); */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 299px;
+    object-fit: cover;
+}
 
   /* ===========================================
     Responsive Codes
@@ -160,7 +235,7 @@
     .navbar {
       /* display: none; */
       width: 100%;
-      height: 100vh;
+      height: 170vh;
       background: #e7f5ff;
       position: absolute;
       top: 0;
@@ -230,7 +305,7 @@
     text-decoration: none;
     font-family: Poppins, Sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.5px;
     transition: color 0.4s ease-in-out;
     -webkit-transition: color 0.4s ease-in-out;
@@ -290,21 +365,30 @@
   .navbar-link:visited {
     display: inline;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 550;
     color: #ffffff;
     margin-top: 35px;
   }
 
   .dropdown-menu {
-    border-style: none;
-  }
+    border-style: none !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
 
   .custom-dropdown .dropdown-menu a.dropdown-item {
 
     padding: 10px;
+    border-style: none !important;
     color: black;
   }
+  .nav-item.dropdown {
+    margin-bottom: -10px; /* Adjust the value as needed */
+}
 
   .custom-dropdown .dropdown-menu a.dropdown-item:hover {
     color: #56b1bf;
@@ -318,7 +402,7 @@
     transition: background .3s, border-color .3s, box-shadow .3s;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     margin-left: 100%;
-    margin-top: -31%;
+    margin-top: -19%;
     border-style: none;
   }
 
@@ -330,7 +414,7 @@
     border-style: none;
   }
   .dropdown-submenu:hover>.dropdown-menu {
-    display: block;
+    display: block ;
   }
 
 
@@ -419,7 +503,7 @@
     }
     .nt3{
         font-size: 14px;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .header {
       position: relative;
@@ -477,11 +561,11 @@
 .header .navbar .dropdown-menu a{
     border: none;
 }
-.header .navbar .dropdown-menu{
+/* .header .navbar .dropdown-menu{
     padding: 12px 0 12px 15px;
-}
+} */
 .sub{
-padding-left: 30px;
+/* padding-left: 30px; */
 position: static;
 font-size: 16px;
     opacity: 1;
@@ -502,7 +586,7 @@ font-size: 16px;
     margin-left: 0;
     margin-top: 0%;
     border-style: none;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 position: static;
     opacity: 1;
     transform: none;
