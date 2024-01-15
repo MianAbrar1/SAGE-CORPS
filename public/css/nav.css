@@ -4,7 +4,7 @@
     margin: 0;
     vertical-align: middle;
     position: inherit;
-    display: none;
+
   }
 .nt3{
     font-size: 10px;
@@ -27,6 +27,7 @@
     -moz-transition: background-color 0.4s ease-in-out;
     -ms-transition: background-color 0.4s ease-in-out;
     -o-transition: background-color 0.4s ease-in-out;
+    z-index: 1000;
   }
   .mobile-logo {
       display: none; /* Initially hide mobile logo */
@@ -109,6 +110,7 @@
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 9% 20%;
+    z-index: 1;
 }
 
 .overlaps {

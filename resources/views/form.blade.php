@@ -39,16 +39,13 @@
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 </head>
 
+<body>
 <header class="header">
     @include('navbar')
 </header>
-<body>
-    {{-- <div class="parent">
-        {{-- <div class="image1"></div>
-        <div class="image2"></div>
-        <img class="image1" src="https://sagecorps.com/wp-content/uploads/2023/11/damian-zaleski-RYyr-k3Ysqg-unsplash-scaled.jpg" alt="">
-        <img class="image2" src="https://sagecorps.com/wp-content/uploads/2022/07/wave-art-bg-black-top.svg" alt="">
-    </div> --}}
+    <div>
+        <img src="{{url('/img/navbar.PNG')}}" alt=""  width="100%">
+    </div>
 
     <h1 class="text-center"
         style="padding: 20px; font-weight: 500;color: #4a4a4a;font-family: 'proxima-nova','Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 32px;">
