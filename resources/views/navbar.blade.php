@@ -62,7 +62,7 @@
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-berlin/">Berlin</a>
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-dublin/">Dublin</a>
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-lisbon/">Lisbon</a>
-                    <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-copenhagen/">Madrid</a>
+                    <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-madrid/">Madrid</a>
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-milan/">Milan</a>
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-paris/">Paris</a>
                     <a class="dropdown-item" href="https://sagecorps.com/programs/summer-internship-abroad/intern-in-sydney/">Sydney</a>

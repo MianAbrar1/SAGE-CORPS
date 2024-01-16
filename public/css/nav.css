@@ -174,6 +174,49 @@
     height: 299px;
     object-fit: cover;
 }
+.file-block{
+	border-radius: 10px;
+	margin: 6px;
+	color: initial;
+	display: inline-flex;
+    font-size: 15px;
+    font-family: Poppins, Sans-serif;
+    font-weight: 500;
+    text-align: center;
+	& > span.name{
+        padding:  0 10px;
+		width: max-content;
+		display: inline-flex;
+        align-items: baseline;
+	}
+    & > span.fa-file{
+        color: rgb(156, 155, 155);
+    }
+    & > span.fa-times{
+        color: rgb(156, 155, 155);
+    }
+    & > span.fa-dropbox{
+        color: rgb(156, 155, 155);
+    }
+}
+
+.file-delete{
+	display: flex;
+	width: 24px;
+	color: initial;
+	background-color: #6eb4ff00;
+	font-size: large;
+	justify-content: center;
+	margin-right: 3px;
+	cursor: pointer;
+
+}
+.row{
+    --bs-gutter-x: -29.5rem;
+}
+#row>*{
+    width: 7%!important;
+}
 
   /* ===========================================
     Responsive Codes
@@ -203,7 +246,13 @@
   .xyz {
     background-color: none;
   }
-
+.row{
+    --bs-gutter-x: 1.5rem;
+    width: 100%!important;
+}
+#row>*{
+    width: 20%!important;
+}
   .navbar-link::after {
     content: '';
     position: absolute;

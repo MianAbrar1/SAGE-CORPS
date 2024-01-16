@@ -15,15 +15,7 @@ $(':submit').on('click', function() {
             async: false,
             success: function(data) {
                 console.log(data);
-                // if(response.Errors.length > 0){
-                //     toastr.error('errors messages');
-                // } else {
-                toastr.success('application submitted successfully');
-                setTimeout(function() {
-                    window.location.reload();
-                }, 1500);
-                // }
-
+                window.location.href = 'https://sagecorps.com/apply/application-submitted-page/';
             },
             error: (error) => {
                 console.log(error);
@@ -91,7 +83,7 @@ $(document).ready(function() {
         document.getElementById('my-file').click();
     };
     $('input[type=file]').change(function(e) {
-        $('#f-name').html($(this).val().replace(/C:\\fakepath\\/i, ''));
+        //$('#f-name').html($(this).val().replace(/C:\\fakepath\\/i, ''));
         $('#cv-hide').hide();
     });
     $("#button").click(function() {
@@ -164,6 +156,26 @@ $(document).ready(function() {
             }
         },
     });
+    $("#gender").select2({
+        ajax: {
+            url: "https://boards-api.greenhouse.io/v1/boards/sagecorps/jobs/5011434004?questions=true",
+            dataType: 'json',
+            delay: 250,
+            processResults: function (data) {
+                const valuesArray = data.questions[15].fields[0].values;
+                const selectOptions = valuesArray.map(item => ({
+                    id: item.value,
+                    text: item.label
+                }));
+
+                return {
+
+                    results: selectOptions
+                };
+            }
+        },
+    });
+
     $("#race").select2({
         ajax: {
             url: "https://boards-api.greenhouse.io/v1/boards/sagecorps/jobs/5011434004?questions=true",
@@ -307,25 +319,61 @@ $(document).ready(function() {
     });
 
 
-    $('#dropbox').click(function(e) {
+    $("#dropbox").on('click', function(e) {
         e.preventDefault();
-        options = {
-            // Required. Called when a user selects an item in the Chooser.
-            success: function(file) {
-                $('#f-name').html(file[0].name);
+
+        // Open Dropbox Chooser
+        Dropbox.choose({
+            success: function (files) {
+                handleDropboxFiles(files);
                 $('#cv-hide').hide();
             },
-            error: function(xhr) {
-                alert("error could not upload")
-            },
-            linkType: "preview", // or "direct"
-            multiselect: false, // or true
-            extensions: ['.pdf', '.doc', '.docx', '.txt', '.rtf'],
-            folderselect: false, // or true
-        };
-        Dropbox.choose(options);
-
+            linkType: "direct", // or "preview"
+            multiselect: false, // Set to true if you want to allow multiple file selection
+            extensions: ['.pdf', '.doc', '.docx', '.txt'], // Specify allowed file extensions
+        });
     });
+
+    function handleDropboxFiles(files) {
+        let entry = $('<span/>', {class: 'file-block'}),
+            iconClass = 'file-icon fab fa-dropbox',
+            fileName = files[0].name,
+            fileIcon = $('<span/>', {class: iconClass}),
+            fileNameSpan = $('<span/>', {class: 'name', text: fileName}),
+            fileDelete = $('<span/>', {class: 'file-delete fas fa-times'});
+
+        entry.append(fileIcon)
+            .append(fileNameSpan)
+            .append(fileDelete);
+
+        $("#filesList > #f-name").empty().append(entry);
+
+        // Set the Dropbox file information to hidden fields
+        $("#db-filename").val(fileName);
+        $("#db-file_url").val(files[0].link);
+
+        // You can add files to the DataTransfer object if needed
+        // dt.items.add(new File([], fileName));
+
+        // Display the file upload area
+    }
+
+    // EventListener for the delete button created
+    $(document).on('click', 'span.file-delete', function () {
+        // Reset the file information from hidden fields
+        $("#db-filename").val("");
+        $("#db-file_url").val("");
+        $('#cv-hide').show();
+
+        // Remove the display of the file name
+        $(this).parent().remove();
+
+        // Check if all files are removed, then hide '#cv'
+        if ($('#filesList > #f-name').children().length === 0) {
+            $('#cv').hide();
+        }
+    });
+
     $("#cloneme").bind("click", function() {
         var index = $("#d2 select").length + 1;
         //Clone the DropDownList
@@ -358,25 +406,26 @@ $(document).ready(function() {
     });
 });
 
-
 const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 
 const toggleNavbar = () => {
+  // alert("Plz Subscribe ");
   nav_header.classList.toggle("active");
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
-document.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  if (window.scrollY > 0) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
+document.addEventListener('scroll', () =>{
+    const header = document.querySelector('header');
+    if(window.scrollY > 0){
+        header.classList.add('scrolled');
+    }else{
+            header.classList.remove('scrolled');
+    }
+})
+
 document.addEventListener('DOMContentLoaded', function () {
     const navbarLinks = document.querySelectorAll('.navbar-link');
 
