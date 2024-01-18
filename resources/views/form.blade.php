@@ -101,17 +101,16 @@ Priority Application Deadline - Feb 1, 2024
             <label for="phone">Phone <span style="color: red">*</span></label>
             <input type="number" class="form-control" id="phone" name="phone" Required style="width: 100%">
         </div>
-        <div class="form-group">
-
-            <label for="file">Resume/CV <span style="color: red">*</span> </label> <br>
-        </div>
+<div class="form-group">
+  <label for="file">Resume/CV <span style="color: red">*</span> </label> <br>
+</div>
         <div class="form-group" id="cv-hide">
   <div id="resume-allowable-file-types" class="file-types" style="font-size: 12px">
             (File types: pdf, doc, docx, txt, rtf)
         </div>
                     <input type="file" name="resume" id="my-file" accept=".doc, .docx, .txt, .pdf, .rtf" hidden>
                 <br>
-            <div class="row" id="row" style="margin-left: -12px;margin-top:0%;">
+            <div class="row" id="row" style="margin-left: -5px;margin-top:0%;">
                 <input type="button" id="my-button" value="Attach,"
                     style="
                     display: inline-block;
@@ -133,8 +132,9 @@ Priority Application Deadline - Feb 1, 2024
                 <a href="#" id="dropbox" style="font-size: 13px;color: #95001a;text-decoration: none;padding: 0%;">Dropbox,</a>
                   <input type="hidden" id="db-filename" name="resume_url_filename">
                 <input type="hidden" id="db-file_url" name="resume_url">
+
                 <div class="btn-group-toggle ">
-                    <label class="btn"
+                    <label class="btn "
                         style="
                         display: inline-block;
                         outline: none;
@@ -151,7 +151,7 @@ Priority Application Deadline - Feb 1, 2024
                         transition-timing-function: ease-in-out;
                         transition-property: background;
                         transition-duration: 150ms;
-                        box-shadow: none;">
+                        box-shadow: none;margin-left: 8px;">
                         <input type="checkbox" name="" id="button">or enter manually
                     </label>
                 </div>
@@ -402,7 +402,7 @@ Priority Application Deadline - Feb 1, 2024
 <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
-        data-app-key="8s597zsurvxtmkt"></script>
+        data-app-key="w75idigtuug3clm"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -489,6 +489,7 @@ Priority Application Deadline - Feb 1, 2024
 });
 
         </script>
+
 
 
 </body>

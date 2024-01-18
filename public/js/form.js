@@ -319,7 +319,7 @@ $(document).ready(function() {
     });
 
 
-    $("#dropbox").on('click', function(e) {
+$("#dropbox").on('click', function(e) {
         e.preventDefault();
 
         // Open Dropbox Chooser
