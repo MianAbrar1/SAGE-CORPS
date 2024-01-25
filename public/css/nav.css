@@ -420,9 +420,12 @@
 
   .custom-dropdown .dropdown-menu a.dropdown-item {
 
-    padding: 10px;
-    color: black;
-  }
+    padding: 7px 18px;
+    color: #424040;
+    font-weight: 550 !important;
+    font-family: Poppins, Sans-serif !important;
+    font-size: 15px;
+}
 
   .custom-dropdown .dropdown-menu a.dropdown-item:hover {
     color: #56b1bf;
@@ -436,7 +439,7 @@
     transition: background .3s, border-color .3s, box-shadow .3s;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     margin-left: 100%;
-    margin-top: -19%;
+    margin-top: -17%;
     border-style: none;
   }
 
@@ -524,7 +527,7 @@
     .mobile-navbar-btn {
       display: flex;
       height: 44%;
-      width: 6%;
+      width: 52px;
       background: rgb(86, 177, 191);
       color: white;
       border-radius: 32px;
@@ -720,7 +723,7 @@
     .mobile-navbar-btn {
       display: flex;
       height: 38%;
-      width: 15%;
+      width: 50px;
       background: rgb(86, 177, 191);
       color: white;
       border-radius: 32px;
