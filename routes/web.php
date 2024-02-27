@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', function () {
     return view('form');
 });
+Route::get('/springsemesterform', function () {
+    return view('spring_Semester_form');
+});
 Route::post('/submit-application', function (Request $request) {
    try{
        $data = $request->except('_token');
@@ -60,6 +63,38 @@ Route::post('/submit-application', function (Request $request) {
    }
 
 });
+
+Route::post('/submit-form', function (Request $request) {
+    try{
+        $data = $request->except('_token');
+        if(!empty($request->file('resume'))){
+
+            $file = $request->file('resume');
+            // Specify the destination directory within the public folder
+            $destinationPath = public_path('resumes');
+            $filename=$file->move($destinationPath, $file->getClientOriginalName());
+          $name=$file->getClientOriginalName();
+                $data = array_merge($data, [
+                    'resume_url_filename'=> $name,
+                    'resume_url' => 'https://sagecorps.ibsservices.co/public/resumes/'.$name,
+                ]);
+                unset($data['resume']);
+            }
+            $response = Http::withoutVerifying()->withHeaders([
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Basic NTgyZmVlNDYyYWEzMWUzYjI1ZjdiYjkwN2MxMTU0ZWEtNA==', // Use HTTP Basic Authentication
+                ])->post('https://boards-api.greenhouse.io/v1/boards/sagecorps/jobs/4638329004', $data);
+
+                dd($response);
+     // Decode and return the API response
+     Log::info($response->json());
+         return  $response;
+     }catch(\Exception $e)
+    {
+     Log::info($e->getMessage());
+    }
+
+ });
 
 Route::get('/submitted',function(){
     return view('formSuccess');

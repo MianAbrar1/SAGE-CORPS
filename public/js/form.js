@@ -1,12 +1,41 @@
 
 
 $(':submit').on('click', function() {
-    $("form#data").submit(function(e) {
+     $("form#data").submit(function(e) {
         e.preventDefault();
         var form = $("#data");
         var formData = new FormData(form[0]);
         $.ajax({
             url: '/submit-application',
+            type: 'POST',
+            data: formData,
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            async: false,
+            success: function(data) {
+                console.log(data);
+                window.location.href = 'https://sagecorps.com/apply/application-submitted-page/';
+            },
+            error: (error) => {
+                console.log(error);
+                toastr.error('error: could not submit application');
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        })
+    });
+ });
+
+$('#submit-form').on('click', function() {
+    $("form#form2").submit(function(e) {
+        e.preventDefault();
+        var form = $("#form2");
+        var formData = new FormData(form[0]);
+        console.log(formData);
+        $.ajax({
+            url: '/submit-form',
             type: 'POST',
             data: formData,
             headers: {
@@ -135,6 +164,8 @@ $(document).ready(function() {
                 };
             }
         },
+      //  minimumResultsForSearch: Infinity, // Disable the search box
+        dropdownCssClass: "no-search",
     });
     $("#gpa").select2({
         ajax: {
@@ -155,7 +186,19 @@ $(document).ready(function() {
                 };
             }
         },
+      //  minimumResultsForSearch: Infinity
+       // minimumResultsForSearch: -1,
+       dropdownCssClass: "no-search"
+       // Assuming you have a reference to your Select2 input field
     });
+// var select2Input = $(".select2-search__field");
+
+// Disable the search input
+// select2Input.prop("disabled", true);
+//     $('#gpa').on('select2:opening select2:closing', function( event ) {
+//         var $searchfield = $(this).parent().find('.select2-search__field');
+//         $searchfield.prop('disabled', true);
+//    });
     $("#gender").select2({
         ajax: {
             url: "https://boards-api.greenhouse.io/v1/boards/sagecorps/jobs/5011434004?questions=true",
@@ -174,6 +217,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
 
     $("#race").select2({
@@ -195,6 +239,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
     $("#lang").select2({
         ajax: {
@@ -215,6 +260,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
     $("#prog-loc1").select2({
         ajax: {
@@ -235,6 +281,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
     $("#role1").select2({
         ajax: {
@@ -255,6 +302,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
 
     $("#prog-loc2").select2({
@@ -276,6 +324,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
     $("#choice-2").select2({
         ajax: {
@@ -296,6 +345,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
     $("#about-us").select2({
         ajax: {
@@ -316,6 +366,7 @@ $(document).ready(function() {
                 };
             }
         },
+        dropdownCssClass: "no-search",
     });
 
 

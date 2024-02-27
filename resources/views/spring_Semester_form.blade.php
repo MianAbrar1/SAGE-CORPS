@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://kit.fontawesome.com/a4c00a89bc.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a4c00a89bc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -17,73 +17,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
         integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
-    <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+        <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <link rel="icon" href="{{ url('/img/titlelogo.png') }}" type="image/webp">
+    <link rel="icon" href="{{url('/img/titlelogo.png')}}" type="image/webp">
     <title>Apply-SAGE CORPS</title>
 
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <style>
-        body {
-            font-family: Poppins, Sans-serif;
-        }
+body{
+    font-family: Poppins, Sans-serif;
+}
     </style>
 </head>
 
 <body>
-
     <header class="header">
         @include('navbar')
     </header>
-    <div>
-        <img src="{{ url('/img/navbar.PNG') }}" alt="" width="100%">
-    </div>
+<div>
+    <img src="{{url('/img/navbar.PNG')}}" alt=""  width="100%">
+</div>
     <div style="margin-right: 18%;margin-left:17% ;  ">
-        <p
-            style="font-size: 29px;font-weight: 400; padding-top:40px; font-family: 'Open Sans', 'sans-serif';text-align: center;">
-            Summer 2024 Program Application
+        <p style="font-size: 29px;font-weight: 400; padding-top:40px; font-family: 'Open Sans', 'sans-serif';text-align: center;">
+            Spring Semester 2025 Program Application
         </p> <br>
         <p style="font-size: 16px;font-weight: 400;">Thank you for your interest in Sage Corps! We're excited you're
             here and can't wait to begin this journey with you. <br> <br>
-            <strong>This application will take you about 10 minutes to complete.</strong> We recommend applying on a
+            <strong>This application is for the Spring 2025 full semester program for Dublin and Sydney.</strong> If you are looking for the Summer 2025 internship program, the application will open for that later this fall semester.
+            <br><strong>This application will take you about 10 minutes to complete.</strong> We recommend applying on a
             desktop so you can upload a copy of your resume. <br> <br> <span style="font-weight: 400;">Once you apply,
                 we will review your application and you can expect to hear from us in 2-3 business days regarding next
-                steps. If you have questions in the meantime or have questions before you apply, please reach out to us
+                steps. If you have questions in the meantime or have questions before you apply, please reach out to us mailto:
                 <a href="mailto:campusrelations@sagecorps.com" target="_blank"><span
                         style="font-weight: 400;">campusrelations@sagecorps.com</span></a></span>
         </p>
-        <!-- <p style="padding-bottom: 0%; margin-bottom:0%"><strong>Application Deadlines:</strong></p> <br>
+       <!-- <p style="padding-bottom: 0%; margin-bottom:0%"><strong>Application Deadlines:</strong></p> <br>
         <p style="padding-top: 0%; margin-top:0%">Early Bird Enrollment Deadline - Dec 20, 2023* <br>
             Priority<strong><span style="font-weight: 400;"> Application Deadline - Feb 1,
                     2024</span></strong></p> <br>-->
-        <p> <span style="font-weight: 400;">Application Deadlines: <br>
-                Priority Application Deadline - Feb 1, 2024
+           <p> <span style="font-weight: 400;">Application Deadlines: <br>
+                 Application Deadline: October 20, 2024
                 abroad.&nbsp;</span>
         </p>
         <hr style="height:1px">
         <p class="text-right" style="font-size: 12px"> <span style="color: red">*</span> Required</p>
     </div>
-    <form method="post" id="data" enctype="multipart/form-data" action="/submit-application"
+    <form method="POST" id="form2" enctype="multipart/form-data" action="/submit-form"
         style="margin-right: 18%;margin-left:17% ; color:#666;font-size:14px ">
         @csrf
         <div class="form-group">
             <label for="first_name">First Name <span style="color: red">*</span></label>
-            <input type="text" class="form-control" id="first_name" name="first_name" required style="width: 100%">
+            <input type="text" class="form-control" id="first_name" name="first_name" required
+                style="width: 100%">
         </div>
         <div class="form-group">
             <label for="pref_first_name">Preferred First Name </label>
@@ -92,7 +92,8 @@
         </div>
         <div class="form-group">
             <label for="last_name">Last Name <span style="color: red">*</span></label>
-            <input type="text" class="form-control" id="last_name" name="last_name" Required style="width: 100%">
+            <input type="text" class="form-control" id="last_name" name="last_name" Required
+                style="width: 100%">
         </div>
         <div class="form-group">
             <label for="email">Email address <span style="color: red">*</span></label>
@@ -102,15 +103,15 @@
             <label for="phone">Phone <span style="color: red">*</span></label>
             <input type="number" class="form-control" id="phone" name="phone" Required style="width: 100%">
         </div>
-        <div class="form-group">
-            <label for="file">Resume/CV <span style="color: red">*</span> </label> <br>
-        </div>
+<div class="form-group">
+  <label for="file">Resume/CV <span style="color: red">*</span> </label> <br>
+</div>
         <div class="form-group" id="cv-hide">
-            <div id="resume-allowable-file-types" class="file-types" style="font-size: 12px">
-                (File types: pdf, doc, docx, txt, rtf)
-            </div>
-            <input type="file" name="resume" id="my-file" accept=".doc, .docx, .txt, .pdf, .rtf" hidden>
-            <br>
+  <div id="resume-allowable-file-types" class="file-types" style="font-size: 12px">
+            (File types: pdf, doc, docx, txt, rtf)
+        </div>
+                    <input type="file" name="resume" id="my-file" accept=".doc, .docx, .txt, .pdf, .rtf" hidden>
+                <br>
             <div class="row" id="row" style="margin-left: -5px;margin-top:0%;">
                 <input type="button" id="my-button" value="Attach,"
                     style="
@@ -130,9 +131,8 @@
                     transition-property: background;
                     transition-duration: 150ms;
                     box-shadow: none;">
-                <a href="#" id="dropbox"
-                    style="font-size: 13px;color: #95001a;text-decoration: none;padding: 0%;">Dropbox,</a>
-                <input type="hidden" id="db-filename" name="resume_url_filename">
+                <a href="#" id="dropbox" style="font-size: 13px;color: #95001a;text-decoration: none;padding: 0%;">Dropbox,</a>
+                  <input type="hidden" id="db-filename" name="resume_url_filename">
                 <input type="hidden" id="db-file_url" name="resume_url">
 
                 <div class="btn-group-toggle ">
@@ -212,14 +212,15 @@
         </div>
         <div class="form-group">
             <label for="gpa">GPA <span style="color: red">*</span></label> <br>
-            <select required class="form-control gpa" id="gpa" name="question_9828553004" style="width: 100%">
+            <select required class="form-control gpa"  id="gpa" name="question_9828553004" style="width: 100%">
                 <option disabled selected>Please select</option>
             </select>
         </div>
         <div class="form-group">
             <label for="reason">If your GPA is below 3.0, please use the space below to provide further information
                 that you think would be helpful for us to know regarding your grades.</label>
-            <textarea class="form-control reason" id="reason" name="question_9828554004" rows="3" style="width: 100%"></textarea>
+            <textarea class="form-control reason" id="reason" name="question_9828554004" rows="3"
+                style="width: 100%"></textarea>
         </div>
         <div class="form-group">
             <label for="url">LinkedIn URL: <span style="color: red">*</span></label> <br>
@@ -250,7 +251,7 @@
                 information will be used to determine eligibility for demographically targeted scholarships. Sage Corps
                 is proud of its Fellows' diversity, and under no circumstances, discriminates on the basis of gender,
                 race, creed, color, national origin, or sex.</label>
-            <select class="form-control" id="gender" name="question_9828560004[]" style="width: 100%" required>
+                 <select class="form-control" id="gender" name="question_9828560004[]" style="width: 100%" required>
                 <option disabled selected>Please select</option>
             </select>
 
@@ -273,8 +274,7 @@
         </div>
         <div class="form-group">
             <label for="lang">Native Language <span style="color: red">*</span></label> <br>
-            <select class="form-control" id="lang" name="question_9828563004" style="width: 100%; height:40px"
-                required>
+            <select class="form-control" id="lang" name="question_9828563004" style="width: 100%; height:40px" required>
                 <option disabled selected>Please select</option>
 
             </select>
@@ -286,8 +286,7 @@
                 style="width: 100%">
         </div>
         <div class="form-group">
-            <label for="prog-loc1">What is your first choice for program location?<span
-                    style="color: red">*</span></label> <br>
+            <label for="prog-loc1">What is your first choice for program location?<span style="color: red">*</span></label> <br>
             <label for="" style="margin-top: 5px;font-style: italic;">Please note that all program locations
                 are subject to change.</label>
             <select class="form-control" id="prog-loc1" name="question_9828565004" style="width: 100%"required>
@@ -301,8 +300,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="prog-loc2">What is your second choice for program location?<span
-                    style="color: red">*</span></label> <br>
+            <label for="prog-loc2">What is your second choice for program location?<span style="color: red">*</span></label> <br>
             <label for="" style="margin-top: 5px;font-style: italic;">Please note that all program locations
                 are subject to change.</label>
             <select class="form-control" id="prog-loc2" name="question_9828567004" required style="width: 100%">
@@ -388,10 +386,10 @@
                 peer below by listing their first name, last name, email address, and graduation year.</label>
             <textarea class="form-control" name="question_9828577004" id="nominate" rows="5" style="width: 100%"></textarea>
         </div>
-        <button type="submit" class=" btn btn-sm" id="submit-application"
+                <button type="" id="submit-form" class=" btn btn-sm"
             style="margin-left: 40%; margin-bottom:1%;margin-top:1%">Submit Application</button>
     </form>
-    <section class="fotbag">
+<section class="fotbag">
         <div class="overlaps"></div>
         <div class="content">
             <div class="txt">
@@ -401,104 +399,98 @@
         </div>
     </section>
     @include('footer')
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size: 21px;'
-            class='fas fa-arrow-up'></i></button>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size: 21px;' class='fas fa-arrow-up'></i></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs"
         data-app-key="w75idigtuug3clm"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
 </html>
-<script src="{{ asset('js/form.js') }}"></script>
+    <script src="{{ asset('js/form.js') }}"></script>
 
-<script>
-    // Get the button
-    let mybutton = document.getElementById("myBtn");
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {
-        scrollFunction()
-    };
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
-        } else {
+          } else {
             mybutton.style.display = "none";
+          }
         }
-    }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-<script>
-    const dt = new DataTransfer(); // Permet de manipuler les fichiers de l'input file
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script>
+            const dt = new DataTransfer(); // Permet de manipuler les fichiers de l'input file
 
-    $("#my-file").on('change', function(e) {
-        for (var i = 0; i < this.files.length; i++) {
-            let fileBloc = $('<span/>', {
-                    class: 'file-block'
-                }),
-                fileIcon = $('<span/>', {
-                    class: 'file-icon fas fa-file'
-                }),
-                fileName = $('<span/>', {
-                    class: 'name',
-                    text: this.files.item(i).name
-                });
-            fileDelete = $('<span/>', {
-                class: 'file-delete fas fa-times'
-            });
+            $("#my-file").on('change', function(e){
+    for(var i = 0; i < this.files.length; i++){
+        let fileBloc = $('<span/>', {class: 'file-block'}),
+            fileIcon = $('<span/>', {class: 'file-icon fas fa-file'}),
+            fileName = $('<span/>', {class: 'name', text: this.files.item(i).name});
+            fileDelete = $('<span/>', {class: 'file-delete fas fa-times'});
 
             fileBloc.append(fileIcon)
-                .append(fileName)
-                .append(fileDelete);
+            .append(fileName)
+            .append(fileDelete);
 
-            $("#filesList > #f-name").append(fileBloc);
-        };
+        $("#filesList > #f-name").append(fileBloc);
+    };
 
-        // Ajout des fichiers dans l'objet DataTransfer
-        for (let file of this.files) {
-            dt.items.add(file);
+    // Ajout des fichiers dans l'objet DataTransfer
+    for (let file of this.files) {
+        dt.items.add(file);
+    }
+
+    // Mise à jour des fichiers de l'input file après ajout
+    this.files = dt.files;
+
+    // EventListener pour le bouton de suppression créé
+    $('span.file-delete').click(function(){
+        let name = $(this).next('span.name').text();
+        // Supprimer l'affichage du nom de fichier
+        $(this).parent().remove();
+        for(let i = 0; i < dt.items.length; i++){
+            // Correspondance du fichier et du nom
+            if(name === dt.items[i].getAsFile().name){
+                // Suppression du fichier dans l'objet DataTransfer
+                dt.items.remove(i);
+                continue;
+            }
+            $('#cv-hide').show();
         }
+        // Mise à jour des fichiers de l'input file après suppression
+        document.getElementById('my-file').files = dt.files;
 
-        // Mise à jour des fichiers de l'input file après ajout
-        this.files = dt.files;
-
-        // EventListener pour le bouton de suppression créé
-        $('span.file-delete').click(function() {
-            let name = $(this).next('span.name').text();
-            // Supprimer l'affichage du nom de fichier
-            $(this).parent().remove();
-            for (let i = 0; i < dt.items.length; i++) {
-                // Correspondance du fichier et du nom
-                if (name === dt.items[i].getAsFile().name) {
-                    // Suppression du fichier dans l'objet DataTransfer
-                    dt.items.remove(i);
-                    continue;
-                }
-                $('#cv-hide').show();
-            }
-            // Mise à jour des fichiers de l'input file après suppression
-            document.getElementById('my-file').files = dt.files;
-
-            // Check if all files are removed and the input field is empty, then hide '#cv'
-            if ($('#filesList > #f-name').children().length === 0 && $('#my-file').val() === "") {
-                $('#cv').hide();
-            }
-        });
+        // Check if all files are removed and the input field is empty, then hide '#cv'
+        if ($('#filesList > #f-name').children().length === 0 && $('#my-file').val() === "") {
+            $('#cv').hide();
+        }
     });
-</script>
+});
+
+        </script>
 
 
 
